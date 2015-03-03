@@ -58,31 +58,40 @@
         </ul>
     </div>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-    (function(b, o, i, l, e, r) {
-        b.GoogleAnalyticsObject = l;
-        b[l] || (b[l] =
-            function() {
-                (b[l].q = b[l].q || []).push(arguments)
-            });
-        b[l].l = +new Date;
-        e = o.createElement(i);
-        r = o.getElementsByTagName(i)[0];
-        e.src = '//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e, r)
-    }(window, document, 'script', 'ga'));
-    ga('create', 'UA-XXXXX-X');
-    ga('send', 'pageview');
-    </script>
 
+    <!-- /container -->
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li class="social-icons googleplus">
+                    <a href="#"></a>
+                </li>
+                <li class="social-icons facebook">
+                    <a href="#"></a>
+                </li>
+                <li class="social-icons youtube">
+                    <a href="#"></a>
+                </li>
+                <li class="social-icons share">
+                    <a href="#"></a>
+                </li>
+                <li class="social-icons rss">
+                    <a href="#"></a>
+                </li>
+            </ul>
+            <p class="pull-right">Copyright @ 2015 | Website realizada por
+                <a href="#">OscarR</a></p>
+        </div>
 
+    </footer>
+
+    <!-- Hemos quitado para optimizar los js -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+    
+    <!-- Habra que dejar solo los que vayamos a usar -->
     <!-- build:js scripts/plugins.js -->
     <script src="../bower_components/bootstrap/js/affix.js"></script>
     <script src="../bower_components/bootstrap/js/alert.js"></script>
