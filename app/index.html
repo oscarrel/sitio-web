@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>bootstrap less2</title>
+    <title>Dial E for Evil</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -17,73 +17,383 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
+    <!-- Custom Fonts -->
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Denk+One|Khand:300,400,500,600,700' rel='stylesheet' type='text/css'>
+
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 </head>
 
-<body>
+<body id="page-top" class="index">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+      <![endif]-->
 
-    <!-- Standard button -->
-    <button type="button" class="btn btn-default">Default</button>
-
-    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-    <button type="button" class="btn btn-primary">Primary</button>
-
-    <!-- Indicates a successful or positive action -->
-    <button type="button" class="btn btn-success">Success</button>
-
-    <!-- Contextual button for informational alert messages -->
-    <button type="button" class="btn btn-info">Info</button>
-
-    <!-- Indicates caution should be taken with this action -->
-    <button type="button" class="btn btn-warning">Warning</button>
-
-    <!-- Indicates a dangerous or potentially negative action -->
-    <button type="button" class="btn btn-danger">Danger</button>
-
-    <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-    <button type="button" class="btn btn-link">Link</button>
-
-    <div class="hero-unit">
-        <h1>'Allo, 'Allo!</h1>
-        <p>You now have</p>
-        <ul>
-            <li>HTML5 Boilerplate</li>
-            <li>Sass</li>
-            <li>Modernizr</li>
-        </ul>
-    </div>
-
-
-    <!-- /container -->
-
-    <footer>
+      <!-- Navegacion -->
+      <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <ul>
-                <li class="social-icons googleplus">
-                    <a href="#"></a>
-                </li>
-                <li class="social-icons facebook">
-                    <a href="#"></a>
-                </li>
-                <li class="social-icons youtube">
-                    <a href="#"></a>
-                </li>
-                <li class="social-icons share">
-                    <a href="#"></a>
-                </li>
-                <li class="social-icons rss">
-                    <a href="#"></a>
-                </li>
-            </ul>
-            <p class="pull-right">Copyright @ 2015 | Website realizada por
-                <a href="#">OscarR</a></p>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Dial-E 4EVIL</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#galeria">Galería de Villanos</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">Conocenos</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#joinus">Únete</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contacto</a>
+                    </li>
+                    
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--ImagenLogo-->
+                    <div class="intro-text">
+                        <span class="name">Contrata sin riesgo</span>
+                        <hr class="star-light">
+                        <span class="skills">Discrección asegurada</span>
+                        <span class="skills">Texto</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Galeria Section -->
+    <section id="galeria">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Galería</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 galeria-item">
+                    <a href="#vmodal_gal1" class="galeria-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--Imagen1-->
+                    </a>
+                </div>
+                <div class="col-sm-4 galeria-item">
+                    <a href="#vmodal_gal2" class="galeria-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--Imagen2-->
+                    </a>
+                </div>
+                <div class="col-sm-4 galeria-item">
+                    <a href="#vmodal_gal3" class="galeria-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--Imagen3-->
+                    </a>
+                </div>
+                <div class="col-sm-4 galeria-item">
+                    <a href="#vmodal_gal4" class="galeria-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--Imagen4-->
+                    </a>
+                </div>
+                <div class="col-sm-4 galeria-item">
+                    <a href="#vmodal_gal5" class="galeria-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--Imagen5-->
+                    </a>
+                </div>
+                <div class="col-sm-4 galeria-item">
+                    <a href="#vmodal_gal6" class="galeria-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--Imagen6-->
+                    </a>
+                </div>
+
+                <div class="col-sm-4 galeria-item">
+                    <a href="#vmodal_gal8" class="galeria-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--Imagen7-->
+                    </a>
+                </div>
+                
+                <div class="col-sm-4 galeria-item">
+                    <a href="#vmodal_gal10" class="galeria-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--Imagen8-->
+                    </a>
+                </div>
+                <div class="col-sm-4 galeria-item">
+                    <a href="#vmodal_gal11" class="galeria-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--Imagen9-->
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section  class="success" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Conócenos</h2>
+                <hr class="star-light">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-2">
+                <p>Texto</p>
+            </div>
+            <div class="col-lg-4">
+                <p>Texto</p>
+            </div>
+            <div class="col-lg-4">
+                <p>Texto</p>
+            </div>
+            <div class="col-lg-6 col-lg-offset-3">
+                <!--Video-->
+            </div>
+            <div class="col-lg-4">
+                <p>Texto</p>
+            </div>
+
         </div>
 
+    </div>
+</div>
+</section>
+
+<!--JoinUS Section-->
+<section id="joinus">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Únete</h2>
+                <h5>¡La liga del Mal te necesita!</h5>
+                <hr class="star-primary">
+                <p>Texto</p>
+                <div class="col-lg-4">
+                    <p>Texto</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-6 ">
+            <!--Imagen-->
+        </div>
+        <div class="row">
+
+            <form name="nuevoVillano" id="formulario">
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>Alias</label>
+                        <input type="text" class="form-control" placeholder="Alias" id="alias" required data-validation-required-message="Introduce un Alias">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>Poderes y Habilidades</label>
+                        <input type="text" class="form-control" placeholder="power" id="power" required data-validation-required-message="Escoge poderes y habilidades">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>Telefono</label>
+                        <input type="text" class="form-control" placeholder="Telefono" id="phone" required data-validation-required-message="Introduzca su numero de telefono">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>Correo electrónico</label>
+                        <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Introduzca su correo electrónico">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <br>
+                <div id="success"></div>
+                <div class="row">
+                    <div class="form-group col-xs-12">
+                        <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Contacto</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <form name="sentMessage" id="contactForm" >
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Nombre</label>
+                            <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Introduce tu nombre">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Telefono</label>
+                            <input type="number" class="form-control" placeholder="Teléfono" id="phone" required data-validation-required-message="Introduzca su número de teléfono">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Correo electrónico</label>
+                            <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Introduzca su correo electrónico">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Mensaje</label>
+                            <textarea rows="5" class="form-control" placeholder="Message" id="mensaje" required data-validation-required-message="Introduzca un mensaje"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="success"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- /container -->
+
+<!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Redes Sociales</h3>
+                        <ul class="list-inline">
+            <li class="social-icons googleplus">
+                <a href="#"></a>
+            </li>
+            <li class="social-icons facebook">
+                <a href="#"></a>
+            </li>
+            <li class="social-icons youtube">
+                <a href="#"></a>
+            </li>
+            <li class="social-icons share">
+                <a href="#"></a>
+            </li>
+            <li class="social-icons rss">
+                <a href="#"></a>
+            </li>
+        </ul>
+        <p class="pull-right">Copyright @ 2015 | Website realizada por
+            <a href="#">OscarR</a></p>
+        </div>
+
+</ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Oscar Rela</h3>
+                        <p>Github  <a href="https://github.com/oscarrel/sitio-web"></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                     <div class="col-lg-12">
+                       <!--Recursos-->
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- Hemos quitado para optimizar los js -->
