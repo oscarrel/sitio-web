@@ -80,8 +80,7 @@
                 <div class="col-lg-12">
                     <!--ImagenLogo-->
                     <div class="intro-text">
-                        <span class="name">Contrata sin riesgo</span>
-                        <hr class="star-light">
+                        <span class="name">Villains United</span>
                         <span class="skills">Discrección asegurada</span>
                         <span class="skills">Texto</span>
                     </div>
@@ -96,7 +95,6 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Galería</h2>
-                    <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
@@ -162,7 +160,7 @@
                 </div>
 
                 <div class="col-sm-4 galeria-item">
-                    <a href="#vmodal_gal8" class="galeria-link" data-toggle="modal">
+                    <a href="#vmodal_gal7" class="galeria-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -173,7 +171,7 @@
                 </div>
                 
                 <div class="col-sm-4 galeria-item">
-                    <a href="#vmodal_gal10" class="galeria-link" data-toggle="modal">
+                    <a href="#vmodal_gal8" class="galeria-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -183,7 +181,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 galeria-item">
-                    <a href="#vmodal_gal11" class="galeria-link" data-toggle="modal">
+                    <a href="#vmodal_gal9" class="galeria-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -204,7 +202,6 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2>Conócenos</h2>
-                <hr class="star-light">
             </div>
         </div>
         <div class="row">
@@ -237,7 +234,6 @@
             <div class="col-lg-12 text-center">
                 <h2>Únete</h2>
                 <h5>¡La liga del Mal te necesita!</h5>
-                <hr class="star-primary">
                 <p>Texto</p>
                 <div class="col-lg-4">
                     <p>Texto</p>
@@ -250,32 +246,35 @@
         </div>
         <div class="row">
 
-            <form name="nuevoVillano" id="formulario">
+            <form name="nuevoe" id="form_nuevoe">
+                <div class="row control-group">   
+                    <label for="alias" class="col-sm-3 control-label">Alias</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="Introduce un Alias" id="alias" required data-validation-required-message="Introduce un Alias">
+                        <!--Aqui en este p meteriamos nuestra ayuda con programacion-->
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+
+
                 <div class="row control-group">
-                    <div class="form-group col-xs-12 floating-label-form-group controls">
-                        <label>Alias</label>
-                        <input type="text" class="form-control" placeholder="Alias" id="alias" required data-validation-required-message="Introduce un Alias">
+                    <label for="power" class="col-sm-3 control-label">Poderes y Habilidades</label>
+                    <div class="col-sm-9">
+                        <textarea class="form-control" placeholder="Detalla poderes y habilidades" id="power" name="power" required data-validation-required-message="Escoge poderes y habilidades"></textarea>
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="row control-group">
-                    <div class="form-group col-xs-12 floating-label-form-group controls">
-                        <label>Poderes y Habilidades</label>
-                        <input type="text" class="form-control" placeholder="power" id="power" required data-validation-required-message="Escoge poderes y habilidades">
+                    <label for="phone" class="col-sm-3 control-label">Telefono</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="Introduzca su telefono" id="phone" name="phone" required data-validation-required-message="Introduzca su telefono">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="row control-group">
-                    <div class="form-group col-xs-12 floating-label-form-group controls">
-                        <label>Telefono</label>
-                        <input type="text" class="form-control" placeholder="Telefono" id="phone" required data-validation-required-message="Introduzca su numero de telefono">
-                        <p class="help-block text-danger"></p>
-                    </div>
-                </div>
-                <div class="row control-group">
-                    <div class="form-group col-xs-12 floating-label-form-group controls">
-                        <label>Correo electrónico</label>
-                        <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Introduzca su correo electrónico">
+                    <label for="email" class="col-sm-3 control-label">Correo electrónico</label>
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control" placeholder="Introduzca su email" id="email" name="email" required data-validation-required-message="Introduzca su email">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
@@ -297,51 +296,50 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2>Contacto</h2>
-                <hr class="star-primary">
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <form name="sentMessage" id="contactForm" >
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Nombre</label>
-                            <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Introduce tu nombre">
-                            <p class="help-block text-danger"></p>
-                        </div>
+
+            <form name="sentMessage" id="contactForm" >
+                <div class="row control-group">
+                    <label for="name" class="col-sm-3 control-label">Nombre</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="Introduce tu nombre" id="name" name="name" required data-validation-required-message="Introduzca su nombre">
+                        <p class="help-block text-danger"></p>
                     </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Telefono</label>
-                            <input type="number" class="form-control" placeholder="Teléfono" id="phone" required data-validation-required-message="Introduzca su número de teléfono">
-                            <p class="help-block text-danger"></p>
-                        </div>
+                </div>
+                <div class="row control-group">
+                    <label for="phone2" class="col-sm-3 control-label">Telefono</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="Introduzca su teléfono" id="phone2" name="phone2" required data-validation-required-message="Introduzca su teléfono">
+                        <p class="help-block text-danger"></p>
                     </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Correo electrónico</label>
-                            <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Introduzca su correo electrónico">
-                            <p class="help-block text-danger"></p>
-                        </div>
+                </div>
+                <div class="row control-group">
+                    <label for="email2" class="col-sm-3 control-label">Correo electrónico</label>
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control" placeholder="Introduzca su email" id="email" name="email" required data-validation-required-message="Introduzca su email">
+                        <p class="help-block text-danger"></p>
                     </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Mensaje</label>
-                            <textarea rows="5" class="form-control" placeholder="Message" id="mensaje" required data-validation-required-message="Introduzca un mensaje"></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
+                </div>
+                <div class="row control-group">
+                    <label for="mensaje" class="col-sm-3 control-label">Mensaje</label>
+                    <div class="col-sm-9">
+                        <textarea rows="5" class="form-control" placeholder="Escriba su mensaje" id="mensaje" name="mensaje" required data-validation-required-message="Introduzca su mensaje"></textarea>
+                        <p class="help-block text-danger"></p>
                     </div>
-                    <br>
-                    <div id="success"></div>
-                    <div class="row">
-                        <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-success btn-lg">Enviar</button>
-                        </div>
+                </div>
+                <br>
+                <div id="success"></div>
+                <div class="row">
+                    <div class="form-group col-xs-12">
+                        <button type="submit" class="btn btn-success btn-lg">Enviar</button>
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     </div>
+</div>
 </section>
 
 
@@ -349,79 +347,199 @@
 <!-- /container -->
 
 <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Redes Sociales</h3>
-                        <ul class="list-inline">
-            <li class="social-icons googleplus">
-                <a href="#"></a>
-            </li>
-            <li class="social-icons facebook">
-                <a href="#"></a>
-            </li>
-            <li class="social-icons youtube">
-                <a href="#"></a>
-            </li>
-            <li class="social-icons share">
-                <a href="#"></a>
-            </li>
-            <li class="social-icons rss">
-                <a href="#"></a>
-            </li>
-        </ul>
-        <p class="pull-right">Copyright @ 2015 | Website realizada por
-            <a href="#">OscarR</a></p>
-        </div>
-
-</ul>
+<footer class="text-center">
+    <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-6">
+                    <ul class="list-inline">
+                        <li class="social-icons googleplus">
+                            <a href="#"></a>
+                        </li>
+                        <li class="social-icons facebook">
+                            <a href="#"></a>
+                        </li>
+                        <li class="social-icons youtube">
+                            <a href="#"></a>
+                        </li>
+                        <li class="social-icons share">
+                            <a href="#"></a>
+                        </li>
+                        <li class="social-icons rss">
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                                <ul class="list-inline">
+                        <li>
+                            <a href="https://github.com/oscarrel/sitio-web">Github</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/oscarrel/sitio-web">Color Scheme</a>
+                        </li>
+                    </ul>
                     </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Oscar Rela</h3>
-                        <p>Github  <a href="https://github.com/oscarrel/sitio-web"></a></p>
+        </div>
+    </div>
+</div>
+<div class="footer-below">
+    <div class="container">
+        <div class="row">
+           <div class="col-lg-12">
+             <p class="pull-right">Copyright @ 2015 | Website realizada por <a href="#">OscarR</a></p>
+         </div>
+     </div>
+ </div>
+</div>
+</footer>
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll visible-xs visble-sm">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div>
+
+<!-- Galeria Imágenes -->
+<div class="galeria-modal modal fade" id="vmodal_gal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>JOKER</h2>
+                        <img src="images/portfolio/joker_900.jpg" weight="900px" height="650px" class="img-responsive img-centered" alt="Joker">
+                        <p>¿Necesitas una broma pesada? Este es tu hombre</p>
+                        <ul class="list-inline item-details">
+                            <li>Habilidad Principal:
+                                <strong>Arsenal de bromas</strong>
+                            </li>
+                            <li>Slogan:
+                                <strong>¿Truco o truco?</strong>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" >DialE</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                     <div class="col-lg-12">
-                       <!--Recursos-->
+    </div>
+</div> 
+<div class="galeria-modal modal fade" id="vmodal_gal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>LOKI</h2>
+                        <img src="images/portfolio/loki_900.jpg" weight="900px" height="650px" class="img-responsive img-centered" alt="Loki">
+                        <p>Destreza Nordica a tu servicio</p>
+                        <ul class="list-inline item-details">
+                            <li>Habilidad Principal:
+                                <strong>Amo del engaño y la ilusión</strong>
+                            </li>
+                            <li>Slogan:
+                                <strong>La mano es más rápida que el ojo</strong>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" >DialE</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</div>
+<div class="galeria-modal modal fade" id="vmodal_gal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>PROF ZOOM</h2>
+                        <img src="images/portfolio/joker_900.jpg" weight="900px" height="650px" class="img-responsive img-centered" alt="Joker">
+                        <p>Maldades a la velocidad del sonido</p>
+                        <ul class="list-inline item-details">
+                            <li>Habilidad Principal:
+                                <strong>Arsenal de bromas</strong>
+                            </li>
+                            <li>Slogan:
+                                <strong>Nomeverasllegar</strong>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" >DialE</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="galeria-modal modal fade" id="vmodal_gal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        
 
-    <!-- Hemos quitado para optimizar los js -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-
-    
-    <!-- Habra que dejar solo los que vayamos a usar -->
-    <!-- build:js scripts/plugins.js -->
-    <script src="../bower_components/bootstrap/js/affix.js"></script>
-    <script src="../bower_components/bootstrap/js/alert.js"></script>
-    <script src="../bower_components/bootstrap/js/dropdown.js"></script>
-    <script src="../bower_components/bootstrap/js/tooltip.js"></script>
-    <script src="../bower_components/bootstrap/js/modal.js"></script>
-    <script src="../bower_components/bootstrap/js/transition.js"></script>
-    <script src="../bower_components/bootstrap/js/button.js"></script>
-    <script src="../bower_components/bootstrap/js/popover.js"></script>
-    <script src="../bower_components/bootstrap/js/carousel.js"></script>
-    <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
-    <script src="../bower_components/bootstrap/js/collapse.js"></script>
-    <script src="../bower_components/bootstrap/js/tab.js"></script>
-    <!-- endbuild -->
 
 
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
+
+
+
+
+
+<!-- Hemos quitado para optimizar los js -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+
+<!-- Habra que dejar solo los que vayamos a usar -->
+<!-- build:js scripts/plugins.js -->
+<script src="../bower_components/bootstrap/js/affix.js"></script>
+<script src="../bower_components/bootstrap/js/alert.js"></script>
+<script src="../bower_components/bootstrap/js/dropdown.js"></script>
+<script src="../bower_components/bootstrap/js/tooltip.js"></script>
+<script src="../bower_components/bootstrap/js/modal.js"></script>
+<script src="../bower_components/bootstrap/js/transition.js"></script>
+<script src="../bower_components/bootstrap/js/button.js"></script>
+<script src="../bower_components/bootstrap/js/popover.js"></script>
+<script src="../bower_components/bootstrap/js/carousel.js"></script>
+<script src="../bower_components/bootstrap/js/scrollspy.js"></script>
+<script src="../bower_components/bootstrap/js/collapse.js"></script>
+<script src="../bower_components/bootstrap/js/tab.js"></script>
+<!-- endbuild -->
+
+
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
 </body>
 
 </html>
