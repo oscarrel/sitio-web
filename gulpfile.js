@@ -46,14 +46,14 @@ gulp.task('fonts', function () {
   return gulp.src(require('main-bower-files')().concat('app/fonts/**/*'))
     .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
     .pipe($.flatten())
-    .pipe(gulp.dest('dist/fonts'));
+    .pipe(gulp.dest('dist/fonts/fonts'));
 });
 
 gulp.task('extras', function () {
   return gulp.src([
     'app/*.*',
     '!app/*.html',
-    'node_modules/apache-server-configs/dist/.htaccess'
+    'node_modules/apache-server-configs/dist/htaccess'
   ], {
     dot: true
   }).pipe(gulp.dest('dist'));

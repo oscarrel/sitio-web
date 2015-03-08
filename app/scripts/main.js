@@ -1,16 +1,16 @@
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 (function () {
-'use strict';
-$(function() {
+    'use strict';
+    $(function() {
 
-    $('body').on('click', '.page-scroll a', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
+        $('body').on('click', '.page-scroll a', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        });
     });
-});
 
 // Floating label headings for the contact form
 $(function() {
@@ -33,4 +33,17 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+//  Cuando la barra de navegación de Bootstrap se colapsa,
+//  la accion por defecto al clicar en el menú es mantenerlo abierto.
+//  Con esta funcion el menú se cierra automáticamente
+//  cuando se hace clic en un elemento de menú.
+$('.navbar-nav li a').click(function(event) {// jshint ignore:line
+    $('.navbar-collapse').collapse('hide');
+});
+
+
 }());
+
+
+
+
