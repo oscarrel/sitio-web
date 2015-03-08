@@ -1498,7 +1498,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Khand", Verdana, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -6176,7 +6176,7 @@ button.close {
   z-index: 1070;
   display: block;
   visibility: visible;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Khand", Verdana, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
@@ -6283,7 +6283,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Khand", Verdana, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;
@@ -6904,7 +6904,7 @@ button.close {
 }
 body {
   overflow-x: hidden;
-  font-family: 'Khand', sans-serif;
+  font-family: "Khand", Verdana, Arial, sans-serif;
 }
 p {
   font-size: 20px;
@@ -6927,7 +6927,7 @@ h4,
 h5,
 h6 {
   text-transform: uppercase;
-  font-family: 'Denk One', sans-serif;
+  font-family: "Denk One", Verdana, Arial, sans-serif;
   font-weight: 700;
 }
 .img-centered {
@@ -7104,23 +7104,6 @@ section.success {
   box-shadow: none!important;
   resize: none;
 }
-.floating-label-form-group label {
-  display: block;
-  z-index: 0;
-  position: relative;
-  top: 2em;
-  margin: 0;
-  font-size: .85em;
-  line-height: 1.764705882em;
-  vertical-align: middle;
-  vertical-align: baseline;
-  opacity: 0;
-  transition: top .3s ease,opacity .3s ease;
-}
-.floating-label-form-group:not(:first-child) {
-  padding-left: 14px;
-  border-left: 1px solid #eee;
-}
 .floating-label-form-group-with-value label {
   top: 0;
   opacity: 1;
@@ -7152,16 +7135,6 @@ footer .footer-below {
 footer .footer-below a {
   color: orange;
 }
-.btn-social {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  border: 2px solid #fff;
-  border-radius: 100%;
-  text-align: center;
-  font-size: 20px;
-  line-height: 45px;
-}
 .btn:focus,
 .btn:active,
 .btn.active {
@@ -7185,7 +7158,7 @@ footer .footer-below a {
 .scroll-top .btn:focus {
   outline: 0;
 }
-/*Galeria de imagenes, efectos*/
+/*Galeria de imagenes con ventanas modales*/
 .galeria-modal .modal-content {
   padding: 100px 0;
   min-height: 100%;
